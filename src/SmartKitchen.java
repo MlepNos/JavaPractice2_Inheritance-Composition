@@ -25,8 +25,9 @@ public class SmartKitchen {
 
     public void setKitchenState(boolean coffeeFlag,boolean fridgeFlag,boolean dishWasherFlag){
         brewMaster.setHasWorkToDo(coffeeFlag);
-        dishWasher.setHasWorkToDo(dishWasherFlag);
         iceBox.setHasWorkToDo(fridgeFlag);
+        dishWasher.setHasWorkToDo(dishWasherFlag);
+
     }
     public void doKitchenWork(){
         brewMaster.brewCoffee();
